@@ -17,15 +17,14 @@ function checkIfPrime(num) {
 
 
 function sumPrimes(num) {
-    if (num == 1) {
-        return 1;
+    if (num < 2) {
+        return 'Utilize um número inteiro positivo maior que 1';
     }
 
     let sum = 0;
 
     for (let i = 2; i <= num; i++) {
         if (checkIfPrime(i)) {
-            console.log(i)
             sum += i;
         }
     }
@@ -33,4 +32,4 @@ function sumPrimes(num) {
     return sum;
 }
 
-console.log(sumPrimes(10));
+console.log(sumPrimes(1));
