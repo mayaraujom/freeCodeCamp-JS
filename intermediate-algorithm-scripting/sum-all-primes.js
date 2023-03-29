@@ -4,15 +4,13 @@
 // Rewrite sumPrimes so it returns the sum of all prime numbers that are less than or equal to num.
 
 function checkIfPrime(num) {
-    let isPrime = true;
     for (let i = 2; i < num; i++) {
         if (num % i == 0) {
-            isPrime = false;
-            break;
+            return false;
         }
     }
 
-    return isPrime;
+    return true;
 }
 
 
@@ -32,4 +30,4 @@ function sumPrimes(num) {
     return sum;
 }
 
-console.log(sumPrimes(1));
+console.log(sumPrimes(10));
