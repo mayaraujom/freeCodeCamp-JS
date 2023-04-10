@@ -14,17 +14,17 @@
 // If the country code is provided, you must confirm that the country code is 1. Return true if the string is a valid US phone number; otherwise return false.
 
 function telephoneCheck(str) {
+    // Testa se a str tem caracteres não aceitos em um telefone
     if (/[^0-9\-()\s]/.test(str)) {
         return false;
     }
 
-    const cleanStr = str.replace(/[^0-9\-()\s]/g, "");
-
-    if (/\((?![^()]*\))|(?<!\([^()]*)\)/.test(cleanStr)) {
+    //testa se tem algum parentese que n foi fechado ou aberto
+    if (/\((?![^()]*\))|(?<!\([^()]*)\)/.test(str)) {
         return false;
     }
 
-    const splited = cleanStr.split(/[\s-()]+/);
+    const splited = str.split(/[\s-()]+/);
 
     if (splited.length !== 3 && splited.length !== 4
         && splited.length !== 1) {
