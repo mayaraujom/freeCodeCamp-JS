@@ -1,7 +1,7 @@
 # JavaScript Algorithms and Data Structures
 Algoritmos de vários níveis feitos durante o curso de JavaScript Algorithms and Data Structures do FreeCodeCamp.
 
-<a href="https://www.freecodecamp.org/certification/mayaraujomoraes/javascript-algorithms-and-data-structures" target="_blank"> <h3>Certificado</h3> </a>
+<a href="https://www.freecodecamp.org/certification/mayaraujomoraes/javascript-algorithms-and-data-structures" target="_blank">Certificado</a>
 
 ---
 
